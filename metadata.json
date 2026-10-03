@@ -1,0 +1,29 @@
+{
+  "slug": "accessible-media-transcript-coverage-auditor",
+  "title": "Accessible Media Transcript Coverage Auditor",
+  "category": "accessibility",
+  "description": "Check media inventory for captions or transcripts and documented exceptions.",
+  "fields": {
+    "media_items": {
+      "label": "media items",
+      "kind": "list",
+      "minimum": 1
+    },
+    "caption_records": {
+      "label": "caption records",
+      "kind": "list",
+      "minimum": 1
+    },
+    "transcript_records": {
+      "label": "transcript records",
+      "kind": "list",
+      "minimum": 1
+    },
+    "exception_owners": {
+      "label": "exception owners",
+      "kind": "list",
+      "minimum": 1
+    }
+  },
+  "limitations": "Uses caller-provided evidence only; cannot confirm external facts. Human review remains required."
+}

@@ -1,0 +1,59 @@
+{
+  "name": "review-accessible-media-transcript-coverage-auditor",
+  "description": "Run Accessible Media Transcript Coverage Auditor",
+  "version": "0.1.0",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "payload": {
+        "type": "object",
+        "properties": {
+          "media_items": {
+            "type": "array",
+            "description": "media items"
+          },
+          "caption_records": {
+            "type": "array",
+            "description": "caption records"
+          },
+          "transcript_records": {
+            "type": "array",
+            "description": "transcript records"
+          },
+          "exception_owners": {
+            "type": "array",
+            "description": "exception owners"
+          }
+        },
+        "required": [
+          "media_items",
+          "caption_records",
+          "transcript_records",
+          "exception_owners"
+        ]
+      }
+    },
+    "required": [
+      "payload"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "score": {
+        "type": "object"
+      },
+      "findings": {
+        "type": "array"
+      }
+    }
+  },
+  "implementation": {
+    "type": "script",
+    "path": "review-accessible-media-transcript-coverage-auditor.py",
+    "runtime": "python3"
+  }
+}

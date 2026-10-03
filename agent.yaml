@@ -1,0 +1,11 @@
+spec_version: "0.1.0"
+name: accessible-media-transcript-coverage-auditor
+version: 0.1.0
+description: Check media inventory for captions or transcripts and documented exceptions.
+skills:
+  - accessible-media-transcript-coverage-auditor-skill
+tools:
+  - review-accessible-media-transcript-coverage-auditor
+tags:
+  - accessibility
+  - evidence-driven
